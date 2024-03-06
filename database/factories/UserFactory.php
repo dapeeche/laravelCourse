@@ -50,12 +50,12 @@ class UserFactory extends Factory
     public function configure()
     {
         return $this->afterCreating(function (User $user) {
-           $user->assignRole(Roles::CUSTOMER->value);
+            $user->assignRole(Roles::CUSTOMER->value);
         });
     }
 
     public function withEmail(string $email)
     {
-        return $this->state(fn(array $attrs) => ['email' => $email]);
+        return $this->state(fn (array $attrs) => ['email' => $email]);
     }
 }
