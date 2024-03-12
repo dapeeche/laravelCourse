@@ -190,7 +190,6 @@ return [
             'delete' => 'delete categories',
         ],
         'products' => [
-
             'publish' => 'publish products',
             'edit' => 'edit products',
             'delete' => 'delete products',
